@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'sudo tar -czvf /root/jenkins_backup.tar.gz /var/lib/jenkins'
+        sh 'tar -czvf /root/jenkins_backup.tar.gz /var/lib/jenkins'
       }
     }
   }
