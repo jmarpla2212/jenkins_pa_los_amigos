@@ -1,1 +1,10 @@
-tar -czvf /root/jenkins_backup.tar.gz /var/lib/jenkins
+pipeline {
+  agent { label 'my-agent' }
+  stages {
+    stage('Build') {
+      steps {
+        sh 'sudo tar -czvf /root/jenkins_backup.tar.gz /var/lib/jenkins'
+      }
+    }
+  }
+}
