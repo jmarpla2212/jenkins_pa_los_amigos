@@ -1,1 +1,1 @@
-sudo tar -czvf /root/jenkins_backup.tar.gz /var/lib/jenkins
+tar -czvf /root/jenkins_backup.tar.gz /var/lib/jenkins
